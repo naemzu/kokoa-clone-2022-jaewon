@@ -1,0 +1,34 @@
+#login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+#login-form input {
+  padding: 15px 0px;
+  border: none;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+#login-form input:not([type="submit"]) {
+  border-bottom: 1px solid var(--gray);
+  transition: border-color 3s ease-in-out;
+}
+#login-form input::placeholder {
+  color: var(--gray);
+}
+#login-form input:focus {
+  border-color: var(--yellow);
+}
+#login-form input[type="submit"] {
+  background-color: var(--yellow);
+  cursor: pointer;
+  font-size: 15px;
+  padding: 20px 0px;
+  border-radius: 10px;
+}
+#login-form a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 15px;
+}

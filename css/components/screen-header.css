@@ -1,0 +1,47 @@
+.screen-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 30px var(--horizontal-space) var(--horizontal-space);
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.screen-header__title {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.screen-header__icons span {
+  margin-left: 15px;
+  position: relative;
+}
+.Welcome-header {
+  margin: 7px 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
+  padding: 60px 0px;
+}
+.Welcome-header__title {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.Welcome-header__text {
+  width: 70%;
+  opacity: 0.4;
+}
+
+@keyframes rotatesetting {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotatez(360deg);
+  }
+}
+
+.screen-header__icons .fa-gear:hover {
+  animation: rotatesetting 1s linear infinite;
+}

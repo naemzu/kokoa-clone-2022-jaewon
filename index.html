@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Kokoa Talk</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>KT</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>120%</span>
+        <i class="fa-solid fa-battery-full"></i>
+        <i class="fa-solid fa-bolt-lightning"></i>
+      </div>
+    </div>
+    <header class="Welcome-header">
+      <h1 class="Welcome-header__title">Welcome to kakoaTalk</h1>
+      <p class="Welcome-header__text">
+        If you have a kakoa Account, log in with your email or phone number.
+        Then you can log in kakoaTalk.
+      </p>
+    </header>
+    <form action="friends.html" method="get" id="login-form">
+      <input
+        name="username"
+        type="text"
+        required
+        placeholder="Email or phone number"
+      />
+      <input name="password" type="text" required placeholder="Password" />
+      <input type="submit" value="Log In" />
+      <input type="submit" value="Sign Up" />
+      <a href="#">Find kakoa Account or Password</a>
+    </form>
+    <div id="no-mobile">
+      <span>Your screen is too big. Piss off!</span>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/f5f8da1c6b.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
